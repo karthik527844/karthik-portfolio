@@ -10,7 +10,7 @@ const TechStack = () => {
         <h3>Proficient</h3>
         <div style={gridStyle}>
           {proficientSkills.map((skill, index) => (
-            <span key={index} style={skillBox}>
+            <span key={index} style={skillBox} className="skill-chip">
               {skill}
             </span>
           ))}
@@ -22,7 +22,7 @@ const TechStack = () => {
         <h3>Familiar</h3>
         <div style={gridStyle}>
           {familiarSkills.map((skill, index) => (
-            <span key={index} style={skillBox}>
+            <span key={index} style={skillBox} className="skill-chip">
               {skill}
             </span>
           ))}

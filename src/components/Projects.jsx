@@ -7,7 +7,7 @@ const Projects = () => {
 
       <div style={container}>
         {projects.map((project, index) => (
-          <div key={index} style={card}>
+          <div key={index} style={card} className="project-card">
             <h3>{project.title}</h3>
             <p style={{ lineHeight: "1.6" }}>{project.description}</p>
             <a
