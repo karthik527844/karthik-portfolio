@@ -46,13 +46,19 @@ p {
 
 /* Links */
 a {
-  color: #2563eb;
-  text-decoration: none;
+  color: #1d4ed8; /* darker blue */
+  font-weight: 500;
 }
 
 a:hover {
   text-decoration: underline;
 }
+
+/*footer*/
+footer {
+  background-color: #0f172a;
+}
+
 
 /* Footer links override */
 footer a {
@@ -81,4 +87,10 @@ footer a:hover {
 .skill-chip:hover {
   background-color: #eef2ff;
   transform: scale(1.05);
+}
+
+a:focus,
+button:focus {
+  outline: 2px solid #1d4ed8;
+  outline-offset: 3px;
 }

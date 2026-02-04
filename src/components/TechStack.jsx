@@ -2,8 +2,8 @@ import { proficientSkills, familiarSkills } from "../data/skills";
 
 const TechStack = () => {
   return (
-    <section style={{ padding: "3rem 1rem" }}>
-      <h2 style={{ textAlign: "center" }}>Tech Stack</h2>
+    <section aria-labelledby="tech-heading" style={{ padding: "3rem 1rem" }}>
+      <h2 id="tech-heading" style={{ textAlign: "center" }}>Tech Stack</h2>
 
       {/* Proficient Skills */}
       <div style={{ maxWidth: "900px", margin: "2rem auto" }}>

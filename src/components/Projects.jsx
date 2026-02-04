@@ -2,8 +2,8 @@ import { projects } from "../data/projects";
 
 const Projects = () => {
   return (
-    <section style={{ padding: "3rem 1rem", background: "#f9f9f9" }}>
-      <h2 style={{ textAlign: "center" }}>Projects</h2>
+    <section aria-labelledby="projects-heading" style={{ padding: "3rem 1rem", background: "#f9f9f9" }}>
+      <h2 id="projects-heading" style={{ textAlign: "center" }}>Projects</h2>
 
       <div style={container}>
         {projects.map((project, index) => (
@@ -16,7 +16,7 @@ const Projects = () => {
               rel="noopener noreferrer"
               style={link}
             >
-              View GitHub Repository →
+              View GitHub Repository for {project.title} →
             </a>
           </div>
         ))}
