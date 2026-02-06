@@ -54,20 +54,6 @@ a:hover {
   text-decoration: underline;
 }
 
-/*footer*/
-footer {
-  background-color: #0f172a;
-}
-
-
-/* Footer links override */
-footer a {
-  color: #e5e7eb;
-}
-
-footer a:hover {
-  color: #ffffff;
-}
 /* Project Card Hover Effect */
 .project-card {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
