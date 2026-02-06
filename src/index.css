@@ -117,3 +117,37 @@ button:focus {
   outline: 2px solid #93c5fd;
   outline-offset: 3px;
 }
+
+/* Hero social icons */
+.hero-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  margin: 1.5rem 0;
+}
+
+.hero-icons a {
+  width: 42px;
+  height: 42px;
+  border: 1px solid #22c55e;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.hero-icons a:hover {
+  background-color: #22c55e;
+  transform: translateY(-3px);
+}
+
+.hero-icons svg {
+  width: 22px;
+  height: 22px;
+  fill: #22c55e;
+}
+
+.hero-icons a:hover svg {
+  fill: #000;
+}
