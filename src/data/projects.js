@@ -3,7 +3,7 @@ export const projects = [
     title: "Gesture-Controlled Game Automation",
     description:
       "Developed a hands-free gaming system that interprets real-time body gestures using camera-based motion tracking and computer vision techniques, enabling immersive and interactive gameplay.",
-    github: "https://github.com/your-username/gesture-controlled-game",
+    github: "https://github.com/karthik527844/Gesture-Controlled-Game-Automation",
   },
   {
     title: "Country-Wise Sales Data Analysis",
@@ -15,7 +15,7 @@ export const projects = [
     title: "Hospital Management System (MERN)",
     description:
       "Built a full-stack Hospital Management System using the MERN stack to manage patient records, appointments, and administrative workflows through a secure web interface.",
-    github: "https://github.com/your-username/hospital-management-system",
+    github: "https://github.com/karthik527844/HOSPITAL-MANAGEMENT-SYSTEMS",
   },
   {
     title: "Digital Home-Services Platform (Digi-Services)",
