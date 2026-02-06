@@ -2,27 +2,27 @@ import { proficientSkills, familiarSkills } from "../data/skills";
 
 const TechStack = () => {
   return (
-    <section aria-labelledby="tech-heading" style={{ padding: "3rem 1rem" }}>
-      <h2 id="tech-heading" style={{ textAlign: "center" }}>Tech Stack</h2>
+    <section aria-labelledby="tech-heading">
+      <h2 id="tech-heading" className="section-title">
+        Tech Stack
+      </h2>
 
-      {/* Proficient Skills */}
-      <div style={{ maxWidth: "900px", margin: "2rem auto" }}>
-        <h3>Proficient</h3>
-        <div style={gridStyle}>
+      <div className="tech-group">
+        <h3 className="tech-subtitle">Proficient</h3>
+        <div className="tech-grid">
           {proficientSkills.map((skill, index) => (
-            <span key={index} style={skillBox} className="skill-chip">
+            <span key={index} className="skill-chip">
               {skill}
             </span>
           ))}
         </div>
       </div>
 
-      {/* Familiar Skills */}
-      <div style={{ maxWidth: "900px", margin: "2rem auto" }}>
-        <h3>Familiar</h3>
-        <div style={gridStyle}>
+      <div className="tech-group">
+        <h3 className="tech-subtitle">Familiar</h3>
+        <div className="tech-grid">
           {familiarSkills.map((skill, index) => (
-            <span key={index} style={skillBox} className="skill-chip">
+            <span key={index} className="skill-chip">
               {skill}
             </span>
           ))}
@@ -30,21 +30,6 @@ const TechStack = () => {
       </div>
     </section>
   );
-};
-
-const gridStyle = {
-  display: "grid",
-  gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))",
-  gap: "1rem",
-  marginTop: "1rem",
-};
-
-const skillBox = {
-  padding: "0.8rem",
-  textAlign: "center",
-  border: "1px solid #ccc",
-  borderRadius: "6px",
-  fontSize: "0.95rem",
 };
 
 export default TechStack;
