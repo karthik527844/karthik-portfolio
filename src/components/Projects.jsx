@@ -2,8 +2,10 @@ import { projects } from "../data/projects";
 
 const Projects = () => {
   return (
-    <section aria-labelledby="projects-heading" style={{ padding: "3rem 1rem", background: "#f9f9f9" }}>
-      <h2 id="projects-heading" style={{ textAlign: "center" }}>Projects</h2>
+  <section style={{ padding: "3rem 1rem" }}>
+      <h2 id="projects-heading" style={{ textAlign: "center", marginBottom: "2rem" }}>
+        Projects
+      </h2>
 
       <div style={container}>
         {projects.map((project, index) => (
@@ -36,7 +38,6 @@ const container = {
 const card = {
   padding: "1.5rem",
   borderRadius: "8px",
-  background: "#fff",
   boxShadow: "0 4px 10px rgba(0,0,0,0.08)",
 };
 

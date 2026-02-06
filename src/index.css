@@ -1,3 +1,18 @@
+html,
+body {
+  min-height: 100%;
+  background-color: var(--bg-dark);
+}
+
+:root {
+  --bg-dark: #020617;
+  --bg-card: #020617;
+  --text-main: #e5e7eb;
+  --text-muted: #9ca3af;
+  --accent: #22c55e;
+  --accent-soft: rgba(34, 197, 94, 0.15);
+}
+
 /* Global Reset */
 * {
   margin: 0;
@@ -10,28 +25,32 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
     sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-main);
   line-height: 1.6;
-  color: #1f2937;
-  background-color: #f8fafc;
 }
+
 
 /* Section spacing */
 section {
   margin-bottom: 3rem;
+  background-color: transparent;
 }
 
 /* Headings */
 h1 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #111827;
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: var(--accent);
+  text-shadow: 0 0 12px var(--accent-soft);
 }
 
 h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: #111827;
+  color: #e5e7eb;
+  color: var(--text-muted);
+  font-weight: 500;
 }
+
 
 h3 {
   font-size: 1.2rem;
@@ -40,9 +59,11 @@ h3 {
 
 /* Paragraphs */
 p {
-  font-size: 1rem;
-  color: #374151;
+  font-size: 1.05rem;
+  color: #d1d5db; /* brighter gray for dark bg */
+  line-height: 1.7;
 }
+
 
 /* Links */
 a {
@@ -56,24 +77,26 @@ a:hover {
 
 /* Project Card Hover Effect */
 .project-card {
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background-color: var(--bg-card);
+  border: 1px solid #020617;
 }
 
 .project-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+  border-color: var(--accent);
 }
+
 
 /* Skill Chip Polish */
 .skill-chip {
-  background-color: #ffffff;
-  transition: background-color 0.2s ease, transform 0.2s ease;
+  background-color: #020617;
+  color: var(--text-main);
+  border: 1px solid #020617;
 }
 
 .skill-chip:hover {
-  background-color: #eef2ff;
-  transform: scale(1.05);
+  border-color: var(--accent);
 }
+
 
 a:focus,
 button:focus {
@@ -94,14 +117,14 @@ button:focus {
   transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
-.resume-btn:hover {
-  background-color: #1e40af;
-  transform: translateY(-2px);
+.resume-btn {
+  background-color: var(--accent);
+  color: #020617;
+  font-weight: 600;
 }
 
-.resume-btn:focus {
-  outline: 2px solid #93c5fd;
-  outline-offset: 3px;
+.resume-btn:hover {
+  background-color: #16a34a;
 }
 
 /* Hero social icons */
@@ -136,4 +159,20 @@ button:focus {
 
 .hero-icons a:hover svg {
   fill: #000;
+}
+
+/* Hero description text */
+section p {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.95;
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
 }
