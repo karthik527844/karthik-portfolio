@@ -7,25 +7,28 @@ const TechStack = () => {
         Tech Stack
       </h2>
 
-      <div className="tech-group">
-        <h3 className="tech-subtitle">Proficient</h3>
-        <div className="tech-grid">
-          {proficientSkills.map((skill, index) => (
-            <span key={index} className="skill-chip">
-              {skill}
-            </span>
-          ))}
+      {/* Container */}
+      <div className="content-container">
+        <div className="tech-group">
+          <h3 className="tech-subtitle">Proficient</h3>
+          <div className="tech-grid">
+            {proficientSkills.map((skill, index) => (
+              <span key={index} className="skill-chip">
+                {skill}
+              </span>
+            ))}
+          </div>
         </div>
-      </div>
 
-      <div className="tech-group">
-        <h3 className="tech-subtitle">Familiar</h3>
-        <div className="tech-grid">
-          {familiarSkills.map((skill, index) => (
-            <span key={index} className="skill-chip">
-              {skill}
-            </span>
-          ))}
+        <div className="tech-group">
+          <h3 className="tech-subtitle">Familiar</h3>
+          <div className="tech-grid">
+            {familiarSkills.map((skill, index) => (
+              <span key={index} className="skill-chip">
+                {skill}
+              </span>
+            ))}
+          </div>
         </div>
       </div>
     </section>

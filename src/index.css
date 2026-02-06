@@ -221,7 +221,12 @@ section p {
   transform: translateY(-2px);
   border-color: var(--accent);
 }
-
+/* Shared content container */
+.content-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
 
 @media (prefers-reduced-motion: reduce) {
   * {
