@@ -21,14 +21,9 @@ as part of the Gesix Solutions Internship – Sprint 01.
 ## Setup & Installation
 If you want to run this project locally on your machine:
 
-# 1. Clone the repository
+# #Clone the repository
+```bash
 https://github.com/karthik527844/karthik-portfolio.git
-
-# 2. Navigate to directory
 cd karthik-portfolio
-
-# 3. Install dependencies
 npm install
-
-# 4. Start the development server
 npm run dev
